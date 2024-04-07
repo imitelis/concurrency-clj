@@ -1,0 +1,122 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+
+PLEASE NOTE
+We will update the default location of this file. 
+The new default location will be 
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false: 
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in Terminal: pushd /home/cogito/Desktop/concurrency-clj/project ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless ; popd
+; Using host:port 127.0.0.1:38317 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉project.core꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉project.core꞉> 
+; Jack-in done.
+clj꞉project.core꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window\nabout why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉project.core꞉> 
+#'project.core/foo
+clj꞉project.core꞉> 
+#'project.core/foo
+clj꞉project.core꞉> 
+#'project.core/foo
+clj꞉project.core꞉> 
+#'project.core/foo
+clj꞉project.core꞉> 
+#'project.core/foo
+clj꞉project.core꞉> 
+#'project.core/foo
+clj꞉project.core꞉> (foo)
+; Hello World
+nil
+clj꞉project.core꞉> (some-scary-black-box-fn)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:65:20).
+; Unable to resolve symbol: some-scary-black-box-fn in this context
+clj꞉project.core꞉> (some-scary-black-box-fn)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:68:20).
+; Unable to resolve symbol: some-scary-black-box-fn in this context
+clj꞉project.core꞉> (run-java-thread)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:71:20).
+; Unable to resolve symbol: run-java-thread in this context
+clj꞉project.core꞉> (run-java-thread)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:74:20).
+; Unable to resolve symbol: run-java-thread in this context
+clj꞉project.core꞉> 
+nil
+clj꞉project.core꞉> 
+; Syntax error compiling at (src/project/core.clj:21:3).
+; No such namespace: log
+clj꞉project.core꞉> 
+; Syntax error compiling at (src/project/core.clj:22:3).
+; No such namespace: log
+clj꞉project.core꞉> 
+; Syntax error compiling at (src/project/core.clj:22:3).
+; No such namespace: log
+clj꞉project.core꞉> 
+nil
+clj꞉project.core꞉> 
+; Syntax error compiling at (src/project/core.clj:21:3).
+; No such namespace: log
+clj꞉project.core꞉> 
+; Syntax error compiling at (src/project/core.clj:30:3).
+; No such namespace: log
+clj꞉project.core꞉> 
+; Syntax error compiling at (src/project/core.clj:29:3).
+; No such namespace: log
+clj꞉project.core꞉> 
+                   (foo)
+; Hello World
+nil
+clj꞉project.core꞉> 
+(run-clojure-future)
+; Execution error (IllegalStateException) at project.core/eval8061 (form-init10215999066865634935.clj:104).
+; Attempting to call unbound fn: #'project.core/run-clojure-future
+clj꞉project.core꞉> (run-java-thread)
+; Execution error (IllegalStateException) at project.core/eval8063 (form-init10215999066865634935.clj:107).
+; Attempting to call unbound fn: #'project.core/run-java-thread
+clj꞉project.core꞉> 
+; Syntax error compiling at (src/project/core.clj:20:3).
+; No such namespace: log
+clj꞉project.core꞉> 
+; Syntax error compiling at (src/project/core.clj:36:11).
+; No such namespace: log
+clj꞉project.core꞉> 
+; Syntax error compiling at (src/project/core.clj:29:3).
+; No such namespace: log
+clj꞉project.core꞉> 
+; Syntax error compiling at (src/project/core.clj:29:3).
+; No such namespace: log
+clj꞉project.core꞉> 
