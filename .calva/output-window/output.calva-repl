@@ -34,8 +34,8 @@ You can configure this with the setting:
 ;   - See https://calva.io/connect-sequences/
 ; 
 
-; Starting Jack-in Terminal: pushd /home/cogito/Desktop/concurrency-clj/project ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless ; popd
-; Using host:port 127.0.0.1:38317 ...
+; Starting Jack-in Terminal: pushd /home/cogito/Desktop/concurrency-clj ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless ; popd
+; Using host:port 127.0.0.1:38877 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
@@ -46,77 +46,110 @@ about why stdout printed to this file is prepended with `;` to be line comments.
 clj꞉project.core꞉> 
 ; Jack-in done.
 clj꞉project.core꞉> 
-"Please see https://calva.io/output/#about-stdout-in-the-repl-window\nabout why stdout printed to this file is prepended with `;` to be line comments."
+; Syntax error compiling at (src/project/core.clj:46:19).
+; No such namespace: client
 clj꞉project.core꞉> 
-#'project.core/foo
+; Syntax error compiling at (src/project/core.clj:46:19).
+; No such namespace: client
 clj꞉project.core꞉> 
-#'project.core/foo
-clj꞉project.core꞉> 
-#'project.core/foo
-clj꞉project.core꞉> 
-#'project.core/foo
-clj꞉project.core꞉> 
-#'project.core/foo
-clj꞉project.core꞉> 
-#'project.core/foo
-clj꞉project.core꞉> (foo)
-; Hello World
-nil
-clj꞉project.core꞉> (some-scary-black-box-fn)
-; Syntax error compiling at (.calva/output-window/output.calva-repl:65:20).
-; Unable to resolve symbol: some-scary-black-box-fn in this context
-clj꞉project.core꞉> (some-scary-black-box-fn)
-; Syntax error compiling at (.calva/output-window/output.calva-repl:68:20).
-; Unable to resolve symbol: some-scary-black-box-fn in this context
-clj꞉project.core꞉> (run-java-thread)
-; Syntax error compiling at (.calva/output-window/output.calva-repl:71:20).
-; Unable to resolve symbol: run-java-thread in this context
-clj꞉project.core꞉> (run-java-thread)
-; Syntax error compiling at (.calva/output-window/output.calva-repl:74:20).
-; Unable to resolve symbol: run-java-thread in this context
-clj꞉project.core꞉> 
+; nREPL Connection was closed
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///home/cogito/Desktop/concurrency-clj/.nrepl-port ...
+; No nrepl port file found.
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in Terminal: pushd /home/cogito/Desktop/concurrency-clj ; lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless ; popd
+; Using host:port 127.0.0.1:39819 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
 nil
 clj꞉project.core꞉> 
-; Syntax error compiling at (src/project/core.clj:21:3).
+; Jack-in done.
+clj꞉project.core꞉> 
+; Syntax error compiling at (src/project/core.clj:46:19).
+; No such namespace: client
+clj꞉project.core꞉> 
+; "Elapsed time: 0.01914 msecs"
+#'project.core/r
+clj꞉project.core꞉> 
+; "Elapsed time: 0.0202 msecs"
+#'project.core/r
+clj꞉project.core꞉> 
+; Syntax error compiling at (src/project/core.clj:46:19).
+; No such namespace: client
+clj꞉project.core꞉> 
+; "Elapsed time: 0.029139 msecs"
+#'project.core/r
+clj꞉project.core꞉> 
+; Syntax error compiling at (src/project/core.clj:44:19).
+; No such namespace: client
+clj꞉project.core꞉> 
+; "Elapsed time: 0.02207 msecs"
+#'project.core/r
+clj꞉project.core꞉> 
+; Syntax error compiling at (src/project/core.clj:6:3).
+; No such namespace: client
+clj꞉project.core꞉> 
+; Syntax error compiling at (src/project/core.clj:64:19).
+; No such namespace: client
+clj꞉project.core꞉> 
+; "Elapsed time: 0.020891 msecs"
+#'project.core/r
+clj꞉project.core꞉> 
+#'project.core/state-atom
+clj꞉project.core꞉> 
+[1]
+clj꞉project.core꞉> 
+; Syntax error compiling at (src/project/core.clj:109:3).
+; Unable to resolve symbol: counter-atom in this context
+clj꞉project.core꞉> 
+; Syntax error compiling at (src/project/core.clj:109:3).
+; Unable to resolve symbol: counter-atom in this context
+clj꞉project.core꞉> 
+#'project.core/counter-atom
+clj꞉project.core꞉> 
+; Syntax error compiling at (src/project/core.clj:120:5).
 ; No such namespace: log
 clj꞉project.core꞉> 
-; Syntax error compiling at (src/project/core.clj:22:3).
-; No such namespace: log
+#'project.core/state-atom
 clj꞉project.core꞉> 
-; Syntax error compiling at (src/project/core.clj:22:3).
-; No such namespace: log
+; Execution error (ArityException) at project.core/eval11498 (form-init5179696126303459388.clj:125).
+; Wrong number of args (2) passed to: project.core/eval11498/fn--11499
 clj꞉project.core꞉> 
-nil
+; Execution error (ArityException) at project.core/eval11502 (form-init5179696126303459388.clj:125).
+; Wrong number of args (3) passed to: project.core/eval11502/fn--11503
 clj꞉project.core꞉> 
-; Syntax error compiling at (src/project/core.clj:21:3).
-; No such namespace: log
+#'project.core/state-atom
 clj꞉project.core꞉> 
-; Syntax error compiling at (src/project/core.clj:30:3).
-; No such namespace: log
+; Execution error (ArityException) at project.core/eval11506 (form-init5179696126303459388.clj:125).
+; Wrong number of args (3) passed to: project.core/eval11506/fn--11507
 clj꞉project.core꞉> 
-; Syntax error compiling at (src/project/core.clj:29:3).
-; No such namespace: log
+; Syntax error compiling at (src/project/core.clj:126:21).
+; Unable to resolve symbol: old-value in this context
 clj꞉project.core꞉> 
-                   (foo)
-; Hello World
-nil
+#'project.core/state-atom
 clj꞉project.core꞉> 
-(run-clojure-future)
-; Execution error (IllegalStateException) at project.core/eval8061 (form-init10215999066865634935.clj:104).
-; Attempting to call unbound fn: #'project.core/run-clojure-future
-clj꞉project.core꞉> (run-java-thread)
-; Execution error (IllegalStateException) at project.core/eval8063 (form-init10215999066865634935.clj:107).
-; Attempting to call unbound fn: #'project.core/run-java-thread
+; Syntax error compiling at (src/project/core.clj:126:21).
+; Unable to resolve symbol: arg1 in this context
 clj꞉project.core꞉> 
-; Syntax error compiling at (src/project/core.clj:20:3).
-; No such namespace: log
+#'project.core/state-atom
 clj꞉project.core꞉> 
-; Syntax error compiling at (src/project/core.clj:36:11).
-; No such namespace: log
+; [] 10 20
+[1]
 clj꞉project.core꞉> 
-; Syntax error compiling at (src/project/core.clj:29:3).
-; No such namespace: log
+; Syntax error compiling at (src/project/core.clj:135:19).
+; No such namespace: client
 clj꞉project.core꞉> 
-; Syntax error compiling at (src/project/core.clj:29:3).
-; No such namespace: log
+; Syntax error compiling at (src/project/core.clj:135:19).
+; No such namespace: client
 clj꞉project.core꞉> 
