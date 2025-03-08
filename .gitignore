@@ -1,13 +1,20 @@
-/target
-/classes
-/checkouts
-profiles.clj
-pom.xml
-pom.xml.asc
-*.jar
-*.class
-/.lein-*
-/.nrepl-port
-/.prepl-port
-.hgignore
-.hg/
+# Folders and compiled files
+classes/
+checkouts/
+target/
+out/
+
+# Ignore local project-specific config
+.clj-kondo/
+.lsp/
+.calva/
+
+# Ignore the REPL files
+.nrepl-port
+.prepl-port
+
+# Ignore Lein failures
+.lein-failures
+
+# Ignore config.edn
+# config.edn
